@@ -40,7 +40,7 @@ class App{
 		 this.mesh =  new THREE.Mesh(geometry, material);
 		 this.scene.add(this.mesh)
 
-	
+	   const constrols = new OrbitControls(this.camera, this.renderer.domElement)
 
 
 
@@ -48,12 +48,15 @@ class App{
 	}	
     
     resize(){
+		this.camera.aspect = window.innerWidth/ window.innerHeight;
+		this.camera.updateProjectionMatrix();
+		this.renderer.setSize(window.innerWidth, window.innerHeight)
         
     }
     
 	render( ) {   
         this.renderer.render(this.scene, this.camera);
-		this.mesh.rotateY(0.01)
+		this.mesh.rotateX(0.01)
     }
 }
 
