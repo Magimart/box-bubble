@@ -19,7 +19,7 @@ export const Box = () =>  {
 
       return(
         <mesh>
-          <boxBufferGeometry/>
+            <boxBufferGeometry/>
             <meshBasicMaterial color="#ffff" />
         </mesh>
       )

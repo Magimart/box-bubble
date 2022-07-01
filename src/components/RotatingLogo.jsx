@@ -15,11 +15,14 @@ export function RotatingLogo() {
     
     return (
       <group ref={group}  dispose={null}>
-        <group rotation={[-Math.PI / 2, 0, 0]} scale={0.5}>
-          <mesh  geometry={nodes['3D_Text_-_D'].geometry} material={nodes['3D_Text_-_D'].material} position={[-20.49, 1.55, 0.32]} scale={0.1}  />
+        <group rotation={[-Math.PI / 2, 0, 0,]} scale={0.5}>
+          <mesh  geometry={nodes['3D_Text_-_D'].geometry} material={nodes['3D_Text_-_D'].material} position={[-4.49, 1.55, 0.32]} scale={0.1}  />
         </group>
       </group>
     )
   }
   
+
+
+
   
